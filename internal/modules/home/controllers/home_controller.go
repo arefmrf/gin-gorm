@@ -13,7 +13,6 @@ type Controller struct {
 func New() *Controller {
 	return &Controller{
 		articleService: ArticleService.New(),
-		//articleService: ArticleService.New(),
 	}
 }
 
