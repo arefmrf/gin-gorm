@@ -6,4 +6,5 @@ import (
 
 type ArticleRepositoryInterface interface {
 	List(limit int) []ArticleModel.Article
+	Find(id int) ArticleModel.Article
 }
