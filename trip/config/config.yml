@@ -1,0 +1,13 @@
+app:
+  name: "trip"
+
+server:
+  host: "localhost"
+  port: "8080"
+
+db:
+  host: "188.121.112.42"
+  port: "5432"
+  username: "trip"
+  password: "trip"
+  name: "trip"
