@@ -3,7 +3,8 @@ package config
 type Config struct {
 	App    App
 	Server Server
-	DB     DB
+	DB     DB `mapstructure:"db"`
+	TestDB DB `mapstructure:"test_db"`
 }
 
 type App struct {
@@ -16,6 +17,14 @@ type Server struct {
 }
 
 type DB struct {
+	Username string
+	Password string
+	Host     string
+	Port     string
+	Name     string
+}
+
+type TestDB struct {
 	Username string
 	Password string
 	Host     string

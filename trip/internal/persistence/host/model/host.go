@@ -74,7 +74,7 @@ type Host struct {
 
 	// M2M
 	Facilities []persistence.Facility `gorm:"many2many:host_facilities"`
-	Tags       []persistence.HostTag  `gorm:"many2many:host_tags"`
+	Tags       []persistence.HostTag  `gorm:"many2many:host_host_tags"`
 
 	// Timestamps (unix)
 	CreatedAt int64 `gorm:"autoCreateTime"`

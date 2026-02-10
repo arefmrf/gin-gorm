@@ -3,8 +3,8 @@ package query
 import (
 	"context"
 
+	"trip/internal/modules/public_host/responses"
 	"trip/internal/persistence/host/model"
-	"trip/internal/services/public_host/responses"
 	"trip/pkg/database"
 )
 

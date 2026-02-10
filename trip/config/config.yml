@@ -11,3 +11,10 @@ db:
   username: "trip"
   password: "trip"
   name: "trip"
+
+test_db:
+  host: "localhost"
+  port: "5432"
+  username: "postgres"
+  password: "postgres"
+  name: "test"
