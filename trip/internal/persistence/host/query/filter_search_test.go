@@ -65,8 +65,7 @@ func TestFilterSearch_ByCityJSONB(t *testing.T) {
 
 	query := builder.
 		FilterSearch().
-		Preload("Place").
-		Debug()
+		Preload("Place")
 	err := query.Find(&hosts).Error
 
 	assert.NoError(t, err)

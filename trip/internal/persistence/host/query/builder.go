@@ -20,9 +20,9 @@ func New(db *gorm.DB, params map[string]any) *Builder {
 	}
 }
 
-func (b *Builder) addJoin(name, clause string) {
+func (b *Builder) addJoin(name, clause string, args ...interface{}) {
 	if !b.joinsAdded[name] {
-		b.db = b.db.Joins(clause)
+		b.db = b.db.Joins(clause, args...)
 		b.joinsAdded[name] = true
 	}
 }

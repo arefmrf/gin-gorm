@@ -65,8 +65,7 @@ func TestFilterLocation(t *testing.T) {
 
 	query := builder.
 		FilterLocation().
-		Preload("Place").
-		Debug()
+		Preload("Place")
 	err := query.Find(&hosts).Error
 
 	assert.NoError(t, err)
